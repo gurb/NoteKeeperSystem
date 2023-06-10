@@ -17,9 +17,8 @@ namespace NoteKeeperSystem.Infrastructure.Persistence.ModelConfigurations.Note
             builder
                 .HasOne(i => i.User)
                 .WithMany(i => i.Notes)
-                .HasForeignKey(i => i.UserId);
-
-            
+                .HasForeignKey(i => i.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
