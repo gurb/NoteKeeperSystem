@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NoteKeeperSystem.Api.Domain.Models
 {
-    public class NoteAddition: BaseEntity
+    public class NoteAddition: BaseModel
     {
         public string? Content { get; set; }
         public Guid UserId { get; set; }

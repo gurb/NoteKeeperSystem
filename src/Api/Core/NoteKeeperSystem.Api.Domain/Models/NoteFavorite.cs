@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NoteKeeperSystem.Api.Domain.Models
 {
-    public class NoteFavorite: BaseEntity
+    public class NoteFavorite: BaseModel
     {
         public Guid NoteId { get; set; }
         public Guid UserId { get; set; }

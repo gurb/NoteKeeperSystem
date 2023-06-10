@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NoteKeeperSystem.Api.Domain.Models
 {
-    public class User
+    public class User: BaseModel
     {
         public string Username { get; set; }
         public string EmailAddress { get; set; }
